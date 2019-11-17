@@ -57,20 +57,11 @@ public class formFinalizar extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jPanel2 = new javax.swing.JPanel();
         jSeparator6 = new javax.swing.JSeparator();
-        lblQuantCafe = new javax.swing.JLabel();
-        lblQuantAlmoco = new javax.swing.JLabel();
-        lblQuantJantar = new javax.swing.JLabel();
-        lblValPag = new javax.swing.JLabel();
-        lblValTot = new javax.swing.JLabel();
-        lblTroco = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("gerenciamento");
         setBackground(new java.awt.Color(255, 255, 255));
-        setMinimumSize(new java.awt.Dimension(1080, 720));
         setResizable(false);
-        setSize(new java.awt.Dimension(1080, 720));
-        getContentPane().setLayout(null);
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(null);
@@ -78,7 +69,6 @@ public class formFinalizar extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setForeground(new java.awt.Color(51, 153, 0));
-        jPanel1.setMinimumSize(new java.awt.Dimension(820, 500));
         jPanel1.setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -106,7 +96,7 @@ public class formFinalizar extends javax.swing.JFrame {
             }
         });
         jPanel5.add(jTextField1);
-        jTextField1.setBounds(20, 50, 750, 30);
+        jTextField1.setBounds(20, 60, 750, 24);
 
         jPanel3.setBackground(new java.awt.Color(153, 153, 153));
         jPanel3.setLayout(null);
@@ -175,7 +165,7 @@ public class formFinalizar extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton1);
-        jButton1.setBounds(550, 0, 80, 30);
+        jButton1.setBounds(540, 0, 80, 40);
 
         jButton2.setText("Cancelar");
         jButton2.setPreferredSize(new java.awt.Dimension(75, 30));
@@ -185,7 +175,7 @@ public class formFinalizar extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton2);
-        jButton2.setBounds(640, 0, 81, 30);
+        jButton2.setBounds(630, 0, 81, 40);
 
         jLabel9.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -235,43 +225,29 @@ public class formFinalizar extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 190, Short.MAX_VALUE)
+            .addGap(0, 200, Short.MAX_VALUE)
         );
 
         jPanel3.add(jPanel2);
-        jPanel2.setBounds(30, 80, 190, 190);
+        jPanel2.setBounds(30, 80, 190, 200);
         jPanel3.add(jSeparator6);
         jSeparator6.setBounds(250, 140, 250, 50);
-
-        lblQuantCafe.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jPanel3.add(lblQuantCafe);
-        lblQuantCafe.setBounds(420, 90, 50, 20);
-
-        lblQuantAlmoco.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jPanel3.add(lblQuantAlmoco);
-        lblQuantAlmoco.setBounds(410, 184, 50, 20);
-
-        lblQuantJantar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jPanel3.add(lblQuantJantar);
-        lblQuantJantar.setBounds(430, 264, 50, 20);
-
-        lblValPag.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jPanel3.add(lblValPag);
-        lblValPag.setBounds(680, 94, 40, 20);
-
-        lblValTot.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jPanel3.add(lblValTot);
-        lblValTot.setBounds(690, 180, 40, 20);
-
-        lblTroco.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jPanel3.add(lblTroco);
-        lblTroco.setBounds(690, 264, 40, 20);
 
         jPanel5.add(jPanel3);
         jPanel3.setBounds(20, 90, 750, 350);
 
-        getContentPane().add(jPanel5);
-        jPanel5.setBounds(0, 0, 802, 457);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 802, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 15, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
+        );
 
         pack();
         setLocationRelativeTo(null);
@@ -351,12 +327,6 @@ public class formFinalizar extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel lblQuantAlmoco;
-    private javax.swing.JLabel lblQuantCafe;
-    private javax.swing.JLabel lblQuantJantar;
-    private javax.swing.JLabel lblTroco;
-    private javax.swing.JLabel lblValPag;
-    private javax.swing.JLabel lblValTot;
     private javax.swing.JLabel txtCliente;
     private javax.swing.JLabel txtFinal;
     private javax.swing.JLabel txtRefe;

@@ -6,38 +6,18 @@
 
 package modelo;
 
-import java.io.Serializable;
 import java.util.Calendar;
 
 /**
  *
  * @author SauloJCF
  */
-public class Usuario implements Serializable{
+public class Usuario {
     private int codigoUsuario;
     private String senha;
     private int cpf;
     private int nivelDePermissao;
-    private int matricula;
-    private String descricao;
 
-    public int getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(int matricula) {
-        this.matricula = matricula;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-    
-    
     private String nome;
 
     public int getCodigoUsuario() {
